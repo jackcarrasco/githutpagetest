@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnoVenta - Artefactos para tu Hogar</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    header, footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .producto {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background: #f9fafb;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+    }
+    .producto button {
+      background-color: #1e293b;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .producto button:hover {
+      background-color: #0f172a;
+    }
+    #carrito {
+      padding: 1rem;
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TecnoVenta</h1>
+  <p>Artefactos tecnológicos para un estilo de vida moderno</p>
+</header>
+
+<section>
+  <h2>Catálogo de Artefactos</h2>
+  <div id="productos">
+    <div class="producto">
+      <strong>Smart TV 55"</strong>
+      <p>Alta definición, conexión Wi-Fi, control por voz.</p>
+      <button onclick="agregarAlCarrito('Smart TV 55')">Agregar</button>
+    </div>
+    <div class="producto">
+      <strong>Aspiradora Inteligente</strong>
+      <p>Limpieza automática con programación vía app.</p>
+      <button onclick="agregarAlCarrito('Aspiradora Inteligente')">Agregar</button>
+    </div>
+    <div class="producto">
+      <strong>Refrigeradora EcoSmart</strong>
+      <p>Eficiencia energética clase A+, control digital.</p>
+      <button onclick="agregarAlCarrito('Refrigeradora EcoSmart')">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<section id="carrito">
+  <h2>Carrito de Compras</h2>
+  <ul id="lista-carrito"></ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 TecnoVenta. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  function agregarAlCarrito(producto) {
+    const lista = document.getElementById('lista-carrito');
+    let item = document.createElement('li');
+    item.textContent = producto;
+    lista.appendChild(item);
+  }
+</script>
+
+</body>
+</html>

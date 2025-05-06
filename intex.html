@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnoVenta - Artefactos para tu Hogar</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+      text-align: center;
+    }
+    header, footer {
+      background-color: #0f172a;
+      color: white;
+      padding: 2rem;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.7s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+      color: #1e293b;
+    }
+    .producto {
+      padding: 1rem;
+      background: #f9fafb;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .producto:hover {
+      transform: scale(1.05);
+    }
+    button {
+      background-color: #1e293b;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+    button:hover {
+      background-color: #0f172a;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TecnoVenta</h1>
+  <p>Artefactos tecnológicos para un estilo de vida moderno</p>
+</header>
+
+<section>
+  <h2>Análisis de Requisitos</h2>
+  <p>Investigamos las necesidades de nuestros clientes en cuanto a electrodomésticos y tecnología para el hogar.</p>
+  <button onclick="alert('Más información próximamente')">Ver más</button>
+</section>
+
+<section>
+  <h2>Catálogo de Artefactos</h2>
+  <div class="producto">
+    <strong>Smart TV 55"</strong>
+    <p>Alta definición, conexión Wi-Fi, control por voz.</p>
+  </div>
+  <div class="producto">
+    <strong>Aspiradora Inteligente</strong>
+    <p>Limpieza automática con programación vía app.</p>
+  </div>
+  <div class="producto">
+    <strong>Refrigeradora EcoSmart</strong>
+    <p>Eficiencia energética clase A+, control digital.</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 TecnoVenta. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
